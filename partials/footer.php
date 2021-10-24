@@ -74,7 +74,13 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer top -->
-
+        <div style="background-color: #07294d;padding-bottom:20px;">
+            <div class="container">
+                <center>
+                    <p style="text-align:center;color:white">Designed and developed by <a style="color:white" href="team.php">Website Team</a></p>
+                </center>
+            </div>
+        </div>
         <div class="wmh-footer">
             <div class="wmh-mlr-90">
                 <div class="wmh-row">	

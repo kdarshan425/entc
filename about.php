@@ -114,7 +114,7 @@
                 </div>           
             </div> <!-- row -->
             <div class="about-cont">
-                        <p style="text-align:justify;">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers and of highest skills and caliber. Department of E & TC has highly qualified and experienced faculty with expertise in the areas of Digital Image and Signal Processing, VLSI and Embedded System, Communication Engineering and Process Automation etc. The department has defined the programme outcomes and all the good initiatives are undertaken to facilitate and fulfill the same.</p>
+                        <p style="text-align:justify;">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers of highest skills and caliber. Department of E & TC has highly qualified and experienced faculty with expertise in the areas of Digital Image and Signal Processing, VLSI and Embedded System, Communication Engineering and Process Automation etc. The department has defined the programme outcomes and all the good initiatives are undertaken to facilitate and fulfill the same.</p>
                     </div>
             
 <br/><br/>
@@ -125,20 +125,22 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="singel-counter text-center mt-40">
+                        <center>
                         <span><span class="counter">40</span>+</span>
-                        <p>Faculties</p>
+                        <p style="text-align: center;font-size:20px;">Faculties</p>
+                        </center>
                     </div> <!-- singel counter -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="singel-counter text-center mt-40">
                         <span><span class="counter">25,000</span>+</span>
-                        <p>Library Books</p>
+                        <p style="text-align: center;font-size:20px;">Library Books</p>
                     </div> <!-- singel counter -->
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="singel-counter text-center mt-40">
                         <span><span class="counter">20</span>+</span>
-                        <p>Labaratories</p>
+                        <p style="text-align: center;font-size:20px;">Labaratories</p>
                     </div> <!-- singel counter -->
                 </div>
             </div> <!-- row -->

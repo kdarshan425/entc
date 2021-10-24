@@ -53,7 +53,32 @@
             left: 20px;
 
         }
-	</style>
+	
+        .card-style{
+            min-height:480px;
+            padding:20px;
+            box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);
+        }
+        @media (max-width: 768px){
+            .card-style{
+            min-height:auto;
+            padding:20px;
+            box-shadow: 0 3px 5px -1px rgb(0 0 0 / 8%), 0 5px 8px 0 rgb(0 0 0 / 12%), 0 1px 14px 0 rgb(0 0 0 / 6%);
+        }
+        
+    }
+    .back-to-top {
+            position: fixed;
+            left: 20px;
+
+        }
+        .image
+        {
+            width:200px !important;
+            height:200px;
+            align-items: center;
+        }
+    </style>
   
 </head>
 
@@ -108,10 +133,13 @@
 	    <div class="row" style="overflow-x:auto;">
                 <div class="col-lg-12">
                     <div class="section-title mt-30">
-           	<center><table width="90%">
+           	<center><table style="min-width:90%">
                    <tr>
-                       <td><img src="images/teachers/deoghare.png" alt="Teachers"><br/></td>
+                       <td><img style="min-width:150px"  src="images/teachers/deoghare.png" alt="Teachers"></td>
                     <td style="text-align: justify;">
+						<strong>
+						Overall Academic Coordinator
+						</strong> <br>
                     	<strong>SE Academic Coordinator</strong><br/>
                         <strong>Name :</strong> Mrs. S. U. Deoghare<br/>
                         <strong>Designation :</strong> Assistant Professor<br/>
@@ -121,7 +149,7 @@
                    </tr>
 
                    <tr>
-                    <td><img src="images/teachers/bhandarkar.png" alt="Teachers"><br/></td>
+                    <td><img style="min-width:150px"  src="images/teachers/bhandarkar.png" alt="Teachers"></td>
                  <td style="text-align: justify;">
                  	<strong>TE Academic Coordinator</strong><br/>
                      <strong>Name :</strong>Mrs. M. S. Bhandarkar<br/>
@@ -133,7 +161,7 @@
                 </tr>
 
                 <tr>
-                    <td><img src="images/teachers/gaikwad.png" alt="Teachers"><br/></td>
+                    <td><img style="min-width:150px"  src="images/teachers/gaikwad.png" alt="Teachers"></td>
                  <td style="text-align: justify;">
                  	<strong>BE Academic Coordinator</strong><br/>
                      <strong>Name :</strong> Mrs. S. P. Kadam<br/>

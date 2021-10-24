@@ -254,7 +254,7 @@
                             </tr>
                             <tr>
                             <td>3</td>
-                            <td>M.E. E & TC</td>
+                            <td>M.Tech E & TC</td>
                             <td>73</td>
                             <td>286</td>
                             </tr>
@@ -298,7 +298,7 @@
                             </tr>
                             <tr>
                             <td>3</td>
-                            <td>M.E. E & TC</td>
+                            <td>M.Tech E & TC</td>
                             <td>8</td>
                            
                             </tr>

@@ -409,7 +409,7 @@
                             <center>
                             <div class="ltdwidth">
                                 <h3 style="color:white;font-weight:bolder" data-animation="bounceInLeft" data-delay="0.5s">The Exellence at its best !</h3>
-                            <p style="padding-top:20px;" data-animation="fadeInUp" data-delay="0.7s">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers and of highest skills and caliber.</p>
+                            <p style="padding-top:20px;" data-animation="fadeInUp" data-delay="0.7s">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers of highest skills and caliber.</p>
                             <a href="about.php"> <button data-animation="fadeInUp" data-delay="0.8s"  class="main-btn" >About Us</button></a>
                             
                             <ul>
@@ -1062,7 +1062,7 @@ window.onclick = function(event) {
 
     //10sec timer
 function dwntime(){
-var timeleft = 10;
+var timeleft = 5;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(downloadTimer);
