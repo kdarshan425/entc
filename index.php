@@ -327,7 +327,7 @@
         <div class="layer layer-8"></div>
     </div>
 </div>
-<div style="display:none" id="myNav" class="overlay">
+<div id="myNav" class="overlay">
         <div id="myNav1" class="overlay">
         <div class="overlay-content">
             <div class="container">
