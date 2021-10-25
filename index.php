@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 
     <style>
         .ltdwidth{
@@ -59,7 +61,7 @@
             left: 20px;
 
         }
-        
+
         .values{
             padding-top:100px;
         }
@@ -70,7 +72,7 @@
         }
         }
 
-        
+
     @media (min-width: 570px){
         .feature ul li .singel-feature .cont {
         width: 70%;
@@ -128,7 +130,7 @@
         }
 
         .dropdown {
-        width:100%;        
+        width:100%;
         position: relative;
         display: inline-block;
         }
@@ -139,7 +141,7 @@
         background-color: white;
         min-width: 160px;
         overflow: auto;
-        
+
         right: 0;
         z-index: 1;
         }
@@ -205,7 +207,7 @@
 }
 }
 
-        
+
     @media (max-width: 570px){
         .youtube-vdo{
     height:300px;
@@ -214,134 +216,121 @@
 
         }
 
+        /*Curtain Animation */
+        .overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000 !important;
+  top: 0;
+  left: 0;
+  background:url('images/curtain.png') no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 4.5s;
+}
 
-          /*Curtain Animation */
-          .overlay {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 10000 !important;
-    top: 0;
-    left: 0;
-    background:url('images/curtain.png') no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    transition: 4.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+}
+
+.animate-left {
+    position: fixed;
+    -webkit-animation: animateleft 0.4s;
+    animation: animateleft 0.4s;
+}
+@-webkit-keyframes animateleft {
+    from {
+        top: -300px;
+        opacity: 0;
     }
-  }
-  
-  .animate-left {
-      position: fixed;
-      -webkit-animation: animateleft 0.4s;
-      animation: animateleft 0.4s;
-  }
-  @-webkit-keyframes animateleft {
-      from {
-          top: -300px;
-          opacity: 0;
-      }
-      to {
-          bottom: 0;
-          opacity: 1;
-      }
-  }
-  @keyframes animateleft {
-      from {
-          top: -300px;
-          opacity: 0;
-      }
-      to {
-          bottom: 0;
-          opacity: 1;
-      }
-  }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+@keyframes animateleft {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
 
 
 
-        .launch-btn {
-    position: relative;
-    border: none;
-    border-radius: 0px;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.25px;
-    line-height: 1.5rem;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .3s, outline 0s;
-    transition: all .3s, outline 0s;
-    width: 150px;
-    font-family: 'Orbitron', sans-serif;
+      .launch-btn {
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .3s, outline 0s;
+  transition: all .3s, outline 0s;
+  width: 150px;
+  font-family: 'Orbitron', sans-serif;
 }
     </style>
 </head>
 
 <body>
 
-<div class="preloader">
-    <div class="loader rubix-cube">
-        <div class="layer layer-1"></div>
-        <div class="layer layer-2"></div>
-        <div class="layer layer-3 color-1"></div>
-        <div class="layer layer-4"></div>
-        <div class="layer layer-5"></div>
-        <div class="layer layer-6"></div>
-        <div class="layer layer-7"></div>
-        <div class="layer layer-8"></div>
-    </div>
-</div>
-<div id="myNav" class="overlay">
-        <div id="myNav1" class="overlay">
-        <div class="overlay-content">
-            <div class="container">
-                <h1 style="font-size: 56px; color: white;font-family: 'Playfair Display', serif;">ENTC Department Website launching ceremony</h1>
-               
-                <h1 style="font-size: 56px; color: white;font-family: 'Playfair Display', serif;" id="demo"></h1>
-                <div style="padding-top:60px;">
-                <button style="font-family: 'Playfair Display', serif;color:white;background:black;" class="launch-btn" onclick="dwntime()">Launch</button>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div>
+  <div id="myNav" class="overlay">
+          <div id="myNav1" class="overlay">
+          <div class="overlay-content">
+              <div class="container">
+                  <h1 style="font-size: 56px; color: white;font-family: 'Playfair Display', serif;">ENTC Department Website launching ceremony</h1>
+
+                  <h1 style="font-size: 56px; color: white;font-family: 'Playfair Display', serif;" id="demo"></h1>
+                  <div style="padding-top:60px;">
+                  <button style="font-family: 'Playfair Display', serif;color:white;background:black;" class="launch-btn" onclick="dwntime()">Launch</button>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+      <div>
     <!--====== PRELOADER PART START ======-->
 
     <?php include 'partials/loader.php';?>
@@ -351,7 +340,7 @@
     <!--====== HEADER PART START ======-->
 
     <?php include 'partials/header.php';?>
-    
+
 
     <!--====== HEADER PART ENDS ======-->
 
@@ -370,7 +359,7 @@
                                 <ul>
                                     <li>
                                         <button data-animation="fadeInUp" data-delay="0.6s"  class="main-btn" id="myBtn">College tour</button>
-                                        
+
                                 </ul>
                             </div>
                         </center>
@@ -389,7 +378,7 @@
                             <div class="ltdwidth">
                                 <h3 style="color:white;font-weight:bolder" data-animation="bounceInLeft" data-delay="0.5s">FestX 2021</h3>
                                 <p style="padding-top:20px;" data-animation="fadeInUp" data-delay="0.7s">Department of Electronics and Telecommunications  In Association with ETSA and IETE student forum are thrilled to announce a techfest for you all.</p>
-                                 
+
                                  <a href="https://festx.tech/"> <button data-animation="fadeInUp" data-delay="0.8s"  class="main-btn" >Visit website</button></a>
                             <ul>
                             </ul>
@@ -409,9 +398,9 @@
                             <center>
                             <div class="ltdwidth">
                                 <h3 style="color:white;font-weight:bolder" data-animation="bounceInLeft" data-delay="0.5s">The Exellence at its best !</h3>
-                            <p style="padding-top:20px;" data-animation="fadeInUp" data-delay="0.7s">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers of highest skills and caliber.</p>
+                            <p style="padding-top:20px;" data-animation="fadeInUp" data-delay="0.7s">The Department of Electronics and Telecommunication Engineering has been playing a vital role in producing engineers and of highest skills and caliber.</p>
                             <a href="about.php"> <button data-animation="fadeInUp" data-delay="0.8s"  class="main-btn" >About Us</button></a>
-                            
+
                             <ul>
                             </ul>
                             </div>
@@ -422,52 +411,17 @@
             </div> <!-- container -->
         </div> <!-- single slider -->
 
-	
+
     </section>
 
     <!--====== SLIDER PART ENDS ======-->
-   
+
     <?php include 'partials/sidebar.php';?>
     <!--====== CATEGORY PART START ======-->
-    <section style="padding: 20px; background: #07294d; color: white;">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-3 ">
-                <a >Upcomming Events:</a>
-            </div>
-            <div class="col-md-9">
-            <marquee onmouseover="this.stop();" onmouseout="this.start();" class="ticker-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-
-<span class="notification me-2  mt-0 mb-0 text-primary fw-bold">
-    <span class="dot "></span>
-    <a style="color:white;"> 1) Event-Name : Fundamentals of Computer Networks |  Date:Second Week of November |   Faculty Co-ordinators:Mrs. Swati Patil &nbsp;
-</a>
-</span>
-<span class="notification me-2 mt-0 mb-0 text-primary fw-bold">
-    <span class="dot "></span>
-    <a style="color:white;"> 2) Event-Name : Artificial Intelligence based
-Algorithm Implementation
-using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swati Patil &nbsp;
-</span>
-<span class="notification me-2 mt-0 mb-0 text-primary fw-bold">
-<span class="dot "></span>
-    <a style="color:white;"> 3) Event-Name : Self ideal and pursuing of self ideal |  Date:Forth Week of November  |  Faculty Co-ordinators:Mrs. Swati Patil &nbsp;
-</span>
-
-<span class="notification me-2 mt-0 mb-0 text-primary fw-bold">
-<span class="dot "></span>
-    <a style="color:white;"> 4) Event-Name : IETE awarenes program |  Date:Second Week of November |   Faculty Co-ordinators:Mr. S. D. Nagrale &nbsp;
-</span>
-
-</marquee>
-            </div>
-        </div>
-        </div>
-    </section>
 
     <section style="position: relative;" id="category-part">
         <div class="container">
-            <div style="margin-top: 100px;" class="category pt-40 pb-80">
+            <div style="margin-top: 70px;" class="category pt-40 pb-80">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="values category-text pt-40">
@@ -539,14 +493,14 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                                     </span> <!-- singel category -->
                                 </a>
                             </div>
-                            
+
                         </div> <!-- category slied -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- category -->
         </div> <!-- container -->
     </section>
-    
+
     <!--====== CATEGORY PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
@@ -569,13 +523,12 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                         <div class="event-title">
                             <h3>Highlights</h3>
                         </div> <!-- event title -->
-                        <marquee  style="width:100%;" direction="up"  behavior="scroll" scrolldelay="200"  height="300px">
+                        <marquee  style="width:100%;" direction="up"  behavior="scroll" scrolldelay="200"  height="300px" onmouseover="this.stop();" onmouseout="this.start();">
                             <ul class="side-news-data">
-                              <li><a style="color:red" href="pdf/Vaccination-Camp-27-Oct.pdf">Notice regarding Vaccination Camp for Covid 19 on 27 Oct 2021</a></li>
-                              <li><a style="color:red" href="images/PCCOE-Recruitment.jpg"> PCCOE Appointments </a></li>
-                              <li><a style="color:red" href="pdf/PCET-Brochure-2021.pdf">PCET Brochure</a></li>
-                              <li><a style="color:red" href="pdf/PCCOE India Today ranking.pdf">Times Engineering Survey 2021 :PCCoE ranked 13th in INDIA among Top 125 Private Engineering Institutes in Times Engineering Survey 2021 </a></li>
-                                <li><a style="color:red" href="pdf/all-unipune-10-11-2019-20.pdf">Student Eligibility Number 2010-11 to 2019-20</a></li>
+                              <li><a style="color:red" target="_blank" href="http://pccoepune.com/pdf/Vaccination-Camp-27-Oct.pdf">Notice regarding Vaccination Camp for Covid 19 on 27 Oct 2021</a></li>
+                              <li><a style="color:red" target="_blank" href="http://www.pccoepune.com/pdf/all-unipune-10-11-2019-20.pdf">Student Eligibility Number 2010-11 to 2019-20</a></li>
+                              <li><a style="color:red" target="_blank" href="http://pccoepune.com/images/PCCOE-Recruitment.jpg">PCCOE Appointments</a></li>
+                              <!-- <li><a style="color:red" target="_blank" href="#">Student Eligibility Number 2010-11 to 2019-20 </a></li> -->
                             </ul>
                       </marquee>
                     </div> <!-- about event -->
@@ -598,27 +551,64 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                     <div class=" col-lg-6">
                         <div class="apply-cont apply-color-1">
                             <h3>FESTX</h3>
+                            <div style="height:130px"class="">
                             <p style="text-align: justify;">Department of Electronics and Telecommunications  In Association with ETSA and IETE student forum are thrilled to announce a techfest for you all.</p>
+                            </div>
+                            <div style="margin-top:5px;"class="">
                             <a href="https://festx.tech/" class="main-btn">Click Here</a>
+                          </div>
                         </div> <!-- apply cont -->
                     </div>
                     <div class=" col-lg-6">
                         <div class="apply-cont apply-color-2">
+                          <div style="height:180px" class="">
                             <h3>Pimpri Chinchwad College of Engineering, Pune</h3>
                             <p>Institute website</p>
+                            </div>
+                            <div style="margin-top:5px;"class="">
                             <a href="http://www.pccoepune.com/" class="main-btn">Click Here</a>
+                              </div>
                         </div> <!-- apply cont -->
                     </div>
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
+
+        <!-- UPCOMING EVENTS START -->
+        <section class="mt-60 mb-60">
+          <div class="container">
+          <div class="row px-2">
+          <div class="col-lg-12" >
+          <!-- <button type="button" onclick="this.parentNode.parentNode.removeChild(this.parentNode);" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button> -->
+          <strong style="color:#13278a"><i class="far fa-calendar-alt"></i> Upcoming Events!</strong>
+          <marquee class="mt-10" behavior="scroll" scrolldelay="100" onmouseover="this.stop();" onmouseout="this.start();">
+            <a style="font-family: Impact; font-size: 18pt;color:red" href="#">Fundamentals of Computer Networks<br /><p><span style="color:#13278a">Date: </span> Second Week of November</p> <p><span style="color:#13278a">Faculty Co-ordinators:</span> Mrs. Swati Patil</p> </a><span style="width:100px";></span>
+            <a style="font-family: Impact; font-size: 18pt;color:red" href="#">Artificial Intelligence based Algorithm Implementation<br /><p><span style="color:#13278a">Date: </span> Third Week of November</p> <p><span style="color:#13278a">Faculty Co-ordinators:</span> Mrs. Swati Patil</p> </a><span style="width:100px";></span>
+            <a style="font-family: Impact; font-size: 18pt;color:red" href="#">Self ideal and pursuing of self ideal<br /><p><span style="color:#13278a">Date: </span> Forth Week of November</p> <p><span style="color:#13278a">Faculty Co-ordinators:</span> Mrs. Swati Patil</p> </a><span style="width:100px";></span>
+            <a style="font-family: Impact; font-size: 18pt;color:red" href="#">IETE awarenes program<br /><p><span style="color:#13278a">Date: </span> Second Week of November</p> <p><span style="color:#13278a">Faculty Co-ordinators:</span> Mr. S. D. Nagrale</p> </a><span style="width:100px";></span>
+
+          </marquee>
+        </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- UPCOMING EVENTS ENDS -->
     </section>
 
     <!--====== APPLY PART ENDS ======-->
 
+
+
+
+
+
+
+
+
     <!--====== COURSE PART START ======-->
 
-    <section id="course-part" class="pt-115 pb-120 gray-bg">
+    <section id="course-part" class="pt-40 pb-120 gray-bg mt-10">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -628,7 +618,7 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                 </div>
             </div> <!-- row -->
             <div class="row course-slied mt-30">
-                
+
 
 		        <div class="col-lg-4">
                     <div class="singel-course">
@@ -638,12 +628,16 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                             </div>
                         </div>
                         <div class="cont">
+                          <div style="height:180px"class="">
                             <h4>Meet our team</h4>
-                            <p style="text-align: justify;">The influence of good <strong>Teacher</strong> can never be <strong>Erased</strong><br/></p>
+                            <p style="text-align: justify;">The influence of good <strong>Teacher</strong> can never be <strong>Erased</strong></p>
+                            </div>
+                            <div style="margin-top:5px">
                             <br/><a href="faculty.php" class="main-btn">Know More</a><br/><br/>
+                          </div>
                         </div>
                     </div> <!-- singel course -->
-                </div>		        
+                </div>
 
 		        <div class="col-lg-4">
                     <div class="singel-course">
@@ -653,9 +647,13 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                             </div>
                         </div>
                         <div class="cont">
+                            <div style="height:180px"class="">
                             <h4>Student Activities</h4>
                             <p style="text-align: justify;">Our department organizes various actvities for active involvement of students.<br/></p>
+                            </div>
+                            <div style="margin-top:5px">
                             <br/><a href="stactivities.php" class="main-btn">Know More</a><br/><br/>
+                            </div>
                         </div>
                     </div> <!-- singel course -->
                 </div>
@@ -668,9 +666,13 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                             </div>
                         </div>
                         <div class="cont">
+                          <div style="height:180px"class="">
                             <h4>From HOD's Desk</h4>
                             <p style="text-align: justify;">The Goal of Education is advancement of knowledge. The vision of the department<br/></p>
+                            </div>
+                            <div style="margin-top:5px">
                             <br/><a href="hod.php" class="main-btn">Know More</a><br/><br/>
+                            </div>
                         </div>
                     </div> <!-- singel course -->
                 </div>
@@ -683,9 +685,14 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                             </div>
                         </div>
                         <div class="cont">
+                          <div style="height:180px"class="">
                             <h4>Research</h4>
                             <p style="text-align: justify;">Various faculties and students have their journals, research papers published in IEEE, Scopus indexed journals.</p>
+                          </div>
+                            <div style="margin-top:5px">
                             <br/><a href="researchdev.php" class="main-btn">Know More</a>
+
+                            </div>
                         </div>
                     </div> <!-- singel course -->
                 </div>
@@ -698,14 +705,18 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                             </div>
                         </div>
                         <div class="cont">
+                          <div style="height:180px"class="">
                             <h4>Student Achievements</h4>
                             <p style="text-align: justify;">Our students have participated and won various competitions held across the world.<br/></p>
+                            </div>
+                            <div style="margin-top:5px">
                             <br/><a href="stachievements.php" class="main-btn">Know More</a><br/><br/>
+                            </div>
                         </div>
                     </div> <!-- singel course -->
                 </div>
 
-                
+
             </div> <!-- course slied -->
         </div> <!-- container -->
     </section>
@@ -809,7 +820,7 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                         <div class="testimonial-cont">
                             <p style="text-align: justify;">I am extremely grateful and fortunate to be the part of Pimpri Chinchwad College of engineering where I can grow.
                                  The entire faculty and department leaves no stone unturned to shape one's future.
-                                  My three years at PCCOE have been a wonderful experience of learning with prolific exposure to outside. 
+                                  My three years at PCCOE have been a wonderful experience of learning with prolific exposure to outside.
                                   Huge respect, love and devotion for entire faculty members and department. </p>
                             <div>
                                 <h6>Hiral Bhuptani</h6>
@@ -848,8 +859,8 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                         </div>
                         <div class="testimonial-cont">
                             <p  style="text-align: justify;"> I am very grateful to study at PCCOE one of the esteemed College of Maharashtra. In PCCOE I came up with great
-                                 opportunities and was able to build up my both academic as well as co- curricular skills . 
-                                 .The college gave us proper guidance with best mentors to tackle the hurdles and motivated us at every stage . 
+                                 opportunities and was able to build up my both academic as well as co- curricular skills .
+                                 .The college gave us proper guidance with best mentors to tackle the hurdles and motivated us at every stage .
                                  It has been a great learning and amazing experience till now in PCCOE.</p>
                             <h6>Madhav Pujari</h6>
                             <span>ENTC, Engineering</span>
@@ -857,9 +868,9 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
                     </div> <!-- singel testimonial -->
                 </div>
 
-		
 
-                
+
+
             </div> <!-- testimonial slied -->
         </div> <!-- container -->
     </section>
@@ -929,8 +940,6 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
 
 
 
-
-
     <!--====== jquery js ======-->
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -970,7 +979,7 @@ using Python. |  Date:Third Week of November  |  Faculty Co-ordinators:Mrs. Swat
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="js/map-script.js"></script>
 
-   
+
   <script>
 
 // Get the modal
@@ -982,7 +991,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -1009,7 +1018,7 @@ window.onclick = function(event) {
     var div_height = $(".sidebar1").height();
 
     if (window_top + div_height > footer_top)
-        $('.sidebar1').removeClass('sticky-side');    
+        $('.sidebar1').removeClass('sticky-side');
     else if (window_top > div_top) {
         $('.sidebar1').addClass('sticky-side');
     } else {
@@ -1024,7 +1033,7 @@ $(function () {
   </script>
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function sidedrop() { document.getElementById("myDropdown").classList.toggle("show");}
 function sidedrop1() { document.getElementById("myDropdown1").classList.toggle("show");}
@@ -1058,8 +1067,10 @@ window.onclick = function(event) {
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
+    </script>
+    <!--End of Tawk.to Script-->
 
-
+    <script type="text/javascript">
     //10sec timer
 function dwntime(){
 var timeleft = 5;
@@ -1071,14 +1082,12 @@ var downloadTimer = setInterval(function(){
     document.getElementById("myNav1").style.left = "-100%";
   } else {
     document.getElementById("demo").innerHTML = timeleft ;
-    
+
   }
   timeleft -= 1;
 }, 1000);
 }
-
     </script>
-    <!--End of Tawk.to Script-->
 </body>
 
 </html>

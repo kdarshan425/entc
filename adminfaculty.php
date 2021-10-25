@@ -157,7 +157,7 @@
                           <strong>Name :</strong> Mrs. N. P. Sonar<br/>
                           <strong>Designation :</strong> Lab Asst.<br/>
                           <strong>Qualification :</strong> Diploma in Electronics & Communication Engg.<br/>
-                         <strong>Experience :</strong>  13+ Years<br/>
+                         <strong>Experience :</strong>  18+ Years<br/>
                          <strong>Email Id :</strong>  neena.sonar@pccoepune.org<br/>
                       </td>
                      </tr>

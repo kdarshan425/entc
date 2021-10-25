@@ -140,7 +140,7 @@
                 <strong>Name : </strong>Dr. Mrs. Varsha K. Harpale<br/>
                 (M.Tech VLSI Coordinator, Department of E&TC, PCCoE)<br/>
                 <strong>Qualification :</strong>PhD (E & TC Engineering)<br/>
-	 	        <strong>Experience :</strong> 18+ Years<br/>
+	 	        <strong>Experience :</strong> 19+ Years<br/>
                 <strong>Email :</strong> varsha.harpale@pccoepune.org<br/>
                 <strong>Contact :</strong> 9860446160<br/>
                 

@@ -117,7 +117,7 @@
             <div class="row" style="overflow-x:auto;">
                 <div class="col-lg-12">
                     <div class="section-title mt-50">
-                        <h5>Faculty & Staff At M.E.(E & TC) - VLSI Engineering</h5><br/>
+                        <h5>Faculty & Staff At M.Tech(E & TC) - VLSI Engineering</h5><br/>
                         <h2 style="background-color:#13278a; font-size: 30px; width:100%; color:#fff; padding:8px;">Meet our Faculty</h2><br/>
                     </div> <!-- section title -->
                 </div> <!-- about cont -->             
@@ -270,7 +270,7 @@
                         <strong>Name :</strong> Mrs. N. P. Sonar<br/>
                         <strong>Designation :</strong> Lab Asst.<br/>
                         <strong>Qualification :</strong> Diploma in Electronics & Communication Engg.<br/>
-                        <strong>Experience :</strong> 13+ Years<br/>
+                        <strong>Experience :</strong> 18+ Years<br/>
                         <strong>Email Id :</strong> neena.sonar@pccoepune.org<br/>
                         <strong>Contact No:</strong>7387776694<br/>
                         
